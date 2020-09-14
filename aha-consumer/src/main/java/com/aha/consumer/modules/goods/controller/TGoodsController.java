@@ -1,7 +1,8 @@
-package com.aha.consumer.moudules.goods.controller;
+package com.aha.consumer.modules.goods.controller;
 
-import com.aha.consumer.moudules.goods.entity.TGoods;
-import com.aha.consumer.moudules.goods.service.TGoodsService;
+import com.aha.consumer.modules.goods.entity.TGoods;
+import com.aha.consumer.modules.goods.service.TGoodsService;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -14,6 +15,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("tGoods")
+@GlobalTransactional
 public class TGoodsController {
     /**
      * 服务对象
@@ -34,7 +36,7 @@ public class TGoodsController {
 
     @PostMapping("/save")
     public void saveOne(@RequestBody TGoods tGoods){
-
+        tGoodsService.save(tGoods);
     }
 
 }

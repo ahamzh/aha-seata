@@ -1,4 +1,4 @@
-package com.aha.consumer.moudules.goods.entity;
+package com.aha.producer.modules.order.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -12,33 +12,34 @@ import java.util.Date;
 import java.io.Serializable;
 
 /**
- * 商品(TGoods)实体类
+ * 订单(TOrder)实体类
  *
  * @author shoufeng
- * @since 2020-09-13 23:11:51
+ * @since 2020-09-14 21:46:34
  */
-@TableName("t_goods")
+
+@TableName("t_order")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class TGoods implements Serializable {
-    private static final long serialVersionUID = 407721917741068048L;
+public class TOrder implements Serializable {
+    private static final long serialVersionUID = 128891639929909784L;
     /**
     * 主键
     */
     @TableId(type = IdType.ASSIGN_ID)
     private Long id;
     /**
-    * 商品名称
+    * 用户ID
     */
-    private String goodsName;
+    private Long userId;
     /**
-    * 商品价格
+    * 商品ID
     */
-    private Double goodsPrice;
+    private Long goodsId;
     /**
-    * 余下商品数量
+    * 商品数量
     */
     private Integer goodsCount;
     /**

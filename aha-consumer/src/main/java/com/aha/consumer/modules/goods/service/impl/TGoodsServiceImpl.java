@@ -1,10 +1,9 @@
-package com.aha.consumer.moudules.goods.service.impl;
+package com.aha.consumer.modules.goods.service.impl;
 
-import com.aha.consumer.moudules.goods.entity.TGoods;
-import com.aha.consumer.moudules.goods.dao.TGoodsDao;
-import com.aha.consumer.moudules.goods.service.TGoodsService;
+import com.aha.consumer.modules.goods.service.TGoodsService;
+import com.aha.consumer.modules.goods.entity.TGoods;
+import com.aha.consumer.modules.goods.dao.TGoodsDao;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

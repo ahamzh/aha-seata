@@ -1,6 +1,6 @@
-package com.aha.consumer.moudules.goods.dao;
+package com.aha.consumer.modules.goods.dao;
 
-import com.aha.consumer.moudules.goods.entity.TGoods;
+import com.aha.consumer.modules.goods.entity.TGoods;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
