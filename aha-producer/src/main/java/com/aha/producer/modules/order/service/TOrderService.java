@@ -36,7 +36,7 @@ public interface TOrderService extends IService<TOrder>{
      * @param tOrder 实例对象
      * @return 实例对象
      */
-    TOrder insert(TOrder tOrder);
+    TOrder insert(TOrder tOrder) throws Exception;
 
     /**
      * 修改数据

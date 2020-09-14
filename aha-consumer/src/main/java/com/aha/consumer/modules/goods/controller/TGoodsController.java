@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("tGoods")
-@GlobalTransactional
+@GlobalTransactional(rollbackFor = Exception.class)
 public class TGoodsController {
     /**
      * 服务对象

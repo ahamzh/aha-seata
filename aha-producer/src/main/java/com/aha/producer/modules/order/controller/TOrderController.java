@@ -33,7 +33,7 @@ public class TOrderController {
     }
 
     @GetMapping("/test")
-    public void test() {
+    public void test() throws Exception {
         tOrderService.insert(TOrder.builder().goodsCount(111).build());
     }
 

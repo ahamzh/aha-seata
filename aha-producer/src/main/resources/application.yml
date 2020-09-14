@@ -13,7 +13,7 @@ spring:
         group: aha-seata-group
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.189.1:3306/aha_seata?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.189.1:3306/aha_seata_1?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: 123456
 

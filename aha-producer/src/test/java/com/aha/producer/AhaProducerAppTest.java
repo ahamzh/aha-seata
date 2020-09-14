@@ -21,7 +21,7 @@ public class AhaProducerAppTest {
     private TOrderService tOrderService;
 
     @Test
-    public void test(){
+    public void test() throws Exception {
         tOrderService.insert(TOrder.builder().goodsCount(111).build());
     }
 }

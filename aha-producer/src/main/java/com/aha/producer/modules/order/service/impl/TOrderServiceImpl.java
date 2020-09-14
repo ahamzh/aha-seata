@@ -63,11 +63,12 @@ public class TOrderServiceImpl extends ServiceImpl<TOrderDao, TOrder> implements
      * @return 实例对象
      */
     @Override
-    public TOrder insert(TOrder tOrder) {
+    public TOrder insert(TOrder tOrder) throws Exception {
         this.tOrderDao.insert(tOrder);
         goodsService.saveOne(TGoods.builder().goodsName("测试商品新增").build());
         tUserService.insert(TUser.builder().userName("测试用户").build());
-        return tOrder;
+        throw new Exception("自定义异常");
+//        return tOrder;
     }
 
     /**
