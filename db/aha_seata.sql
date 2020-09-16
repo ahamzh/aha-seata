@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 100411
  Source Host           : 192.168.189.1:3306
- Source Schema         : aha_seata
+ Source Schema         : halo_seata
 
  Target Server Type    : MySQL
  Target Server Version : 100411
